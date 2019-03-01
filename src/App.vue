@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <HelloWorld msg="kazto.dev" v-bind:data="data" />
+    <HelloWorld msg="kazto.dev" />
+    <Links :links="links" />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import HelloWorld from './components/HelloWorld.vue';
+import Links from './components/Links.vue';
 
 @Component({
   components: {
     HelloWorld,
+    Links,
   },
 })
 
@@ -19,7 +22,7 @@ export default class App extends Vue {}
 
 <style lang="scss">
 body {
-  background-image: url('/img/ore-gray-1600.png');
+  background-image: url('./assets/ore-gray-1600.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 150vh;

@@ -26,10 +26,11 @@ const links = {
       label: 'E-mail',
       href: 'mailto:kazto@kazto.dev',
     },
-  ]
-}
+  ]};
 
 new Vue({
   render: (h) => h(App),
-  data: links,
+  data: function() {
+    return links;
+  },
 }).$mount('#app');

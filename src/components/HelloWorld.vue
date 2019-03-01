@@ -1,11 +1,6 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <ul>
-      <li v-for="item in links" :key="item.label">
-        <a href={{ item.href }} >{{ item.label }}</a>
-      </li>
-    </ul>
   </div>
 </template>
 
