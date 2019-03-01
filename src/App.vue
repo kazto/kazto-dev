@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <HelloWorld msg="kazto.dev" v-bind:data="data" />
   </div>
 </template>
 
@@ -14,10 +13,19 @@ import HelloWorld from './components/HelloWorld.vue';
     HelloWorld,
   },
 })
+
 export default class App extends Vue {}
 </script>
 
 <style lang="scss">
+body {
+  background-image: url('/img/ore-gray-1600.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 150vh;
+  min-height: 50vh;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
