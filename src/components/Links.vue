@@ -1,27 +1,44 @@
 <template>
     <ul>
-      <li v-for="(href, label) in links" :key="label">
-        <a :href=href >{{ label }}</a>
+      <li v-for="item in data" :key="item.label">
+        <a :href="item.url" >{{ item.label }}</a>
       </li>
     </ul>
 </template>
 
 <script lang="ts">
+
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class Links extends Vue {
-  @Prop() private links!: Array<Object>;
+  data: object[] = [
+    {
+      label: 'Twitter',
+      url: 'https://twitter.com/bainarian',
+    },
+    {
+      label: 'GitHub',
+      url: 'https://github.com/kazto',
+    },
+    {
+      label: 'Blog',
+      url: 'https://www.kazto.net/blog/',
+    },
+    {
+      label: 'Teratail',
+      url: 'https://teratail.com/users/kazto',
+    },
+    {
+      label: 'E-mail',
+      url: 'mailto:kazto@kazto.dev',
+    },
+  ];
 }
+
 </script>
 
 <style scoped lang="scss">
-.hello {
-  margin: 200px 0 0 0;
-}
-h1 {
-  font-size: 10em;
-}
 ul {
   list-style-type: none;
   padding: 0;

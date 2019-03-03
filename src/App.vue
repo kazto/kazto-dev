@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <HelloWorld msg="kazto.dev" />
-    <Links :links="links" />
+    <Links />
   </div>
 </template>
 
