@@ -12,7 +12,7 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class Links extends Vue {
-  data: object[] = [
+  private data: object[] = [
     {
       label: 'Twitter',
       url: 'https://twitter.com/bainarian',
