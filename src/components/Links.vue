@@ -29,10 +29,6 @@ export default class Links extends Vue {
       label: 'Teratail',
       url: 'https://teratail.com/users/kazto',
     },
-    {
-      label: 'E-mail',
-      url: 'mailto:kazto@kazto.dev',
-    },
   ];
 }
 
