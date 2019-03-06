@@ -29,6 +29,14 @@ export default class Links extends Vue {
       label: 'Teratail',
       url: 'https://teratail.com/users/kazto',
     },
+    {
+      label: 'Speakerdeck',
+      url: 'https://speakerdeck.com/kazto',
+    },
+    {
+      label: 'Tamamoku',
+      url: 'https://tamamoku.tokyo/',
+    },
   ];
 }
 
@@ -38,6 +46,8 @@ export default class Links extends Vue {
 ul {
   list-style-type: none;
   padding: 0;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 li {
   display: inline-block;

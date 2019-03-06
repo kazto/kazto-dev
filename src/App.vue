@@ -45,6 +45,7 @@ body {
 @media (max-width: 576px) {
   body {
     background-size: 100vh;
+    background-position: right top;
   }
 
   #app {

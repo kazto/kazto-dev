@@ -22,6 +22,7 @@ export default class HelloWorld extends Vue {
 }
 p.title {
   font-size: 10em;
+  font-weight: bold;
 }
 
 br.sp {
