@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <p class="title">
+      <slot name="title"></slot>
+    </p>
   </div>
 </template>
 
@@ -18,7 +20,31 @@ export default class HelloWorld extends Vue {
 .hello {
   margin: 200px 0 0 0;
 }
-h1 {
+p.title {
   font-size: 10em;
+  font-weight: bold;
+}
+
+br.sp {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .hello {
+    margin: 50px 80px 0 20px;
+    text-align: justify;
+    text-justify: inter-cluster;
+  }
+  p.title {
+    font-size: 6em;
+    text-align: justify;
+    text-justify: inter-cluster;
+    word-break: break-all;
+    line-height: 85%;
+  }
+
+  br.sp {
+    display: block;
+  }
 }
 </style>

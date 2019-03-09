@@ -30,8 +30,12 @@ export default class Links extends Vue {
       url: 'https://teratail.com/users/kazto',
     },
     {
-      label: 'E-mail',
-      url: 'mailto:kazto@kazto.dev',
+      label: 'Speakerdeck',
+      url: 'https://speakerdeck.com/kazto',
+    },
+    {
+      label: 'Tamamoku',
+      url: 'https://tamamoku.tokyo/',
     },
   ];
 }
@@ -42,6 +46,8 @@ export default class Links extends Vue {
 ul {
   list-style-type: none;
   padding: 0;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 li {
   display: inline-block;
