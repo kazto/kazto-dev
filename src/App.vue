@@ -1,7 +1,11 @@
 <template>
   <div id="app">
-    <HelloWorld msg="kazto.dev" />
-    <Links :links="links" />
+    <HelloWorld>
+      <template v-slot:title>
+        kazto<br class='sp'>.dev
+      </template>
+    </HelloWorld>
+    <Links />
   </div>
 </template>
 
@@ -36,5 +40,16 @@ body {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+@media (max-width: 576px) {
+  body {
+    background-size: 100vh;
+    background-position: right top;
+  }
+
+  #app {
+    margin-top: 20px;
+  }
 }
 </style>
