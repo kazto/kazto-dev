@@ -34,7 +34,7 @@ export default class Links extends Vue {
       url: 'https://speakerdeck.com/kazto',
     },
     {
-      label: 'Tamamoku',
+      label: 'たまもく',
       url: 'https://tamamoku.tokyo/',
     },
   ];
@@ -48,6 +48,7 @@ ul {
   padding: 0;
   margin-left: 50px;
   margin-right: 50px;
+  text-align: center;
 }
 li {
   display: inline-block;

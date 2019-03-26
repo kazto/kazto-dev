@@ -2,7 +2,7 @@
   <div id="app">
     <HelloWorld>
       <template v-slot:title>
-        kazto<br class='sp'>.dev
+        <img src="./assets/kazto_dev_logo.png" alt="kazto.dev" class="logo" />
       </template>
     </HelloWorld>
     <Links />
@@ -37,10 +37,14 @@ body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
+
+img.logo {
+  width: 600px;
+}
+
 
 @media (max-width: 576px) {
   body {
@@ -50,6 +54,10 @@ body {
 
   #app {
     margin-top: 20px;
+  }
+
+  img.logo {
+    width: 100%;
   }
 }
 </style>

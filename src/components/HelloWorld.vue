@@ -18,9 +18,10 @@ export default class HelloWorld extends Vue {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .hello {
-  margin: 200px 0 0 0;
+  margin: 50px 0 0 0;
 }
 p.title {
+  padding-left: 150px;
   font-size: 10em;
   font-weight: bold;
 }
@@ -31,7 +32,7 @@ br.sp {
 
 @media (max-width: 576px) {
   .hello {
-    margin: 50px 80px 0 20px;
+    margin: 20px 20px 0 20px;
     text-align: justify;
     text-justify: inter-cluster;
   }
@@ -41,6 +42,8 @@ br.sp {
     text-justify: inter-cluster;
     word-break: break-all;
     line-height: 85%;
+    padding-left: 0;
+    margin-top: 40px;
   }
 
   br.sp {
